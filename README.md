@@ -8,7 +8,11 @@
 
 ### start backend
 
-start BackendServerApplication.kt
+#### IDE
+IDE start BackendServerApplication.kt
+
+#### CLI
+`backend-server/gradlew bootRun`
 
 
 ### Deploy
