@@ -1,6 +1,14 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 
+const fetchData = (url) => {
+  return fetch(url).then(response => response.json())
+}
+const fetchUser = async () => {
+  const data = await fetchData("api/user")
+  console.log(data);
+}
+
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -13,6 +21,7 @@ export default function Home() {
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
+        <button onClick={() => fetchUser()}>button</button>
 
         <p className={styles.description}>
           Get started by editing{' '}
