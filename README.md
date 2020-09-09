@@ -15,8 +15,9 @@ IDE start BackendServerApplication.kt
 `backend-server/gradlew bootRun`
 
 
-### Deploy
+### Backend Build & Deploy
 
-``
+`./gradlew build`
+`java -jar build/libs/backend-server-0.0.1-SNAPSHOT.jar`
 
 
