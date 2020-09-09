@@ -12,7 +12,7 @@ class EyeCatchController(
 ) {
 
     @GetMapping
-    fun getHoge(): String {
-        return "hoge"
+    fun getHoge(): OutPut {
+        return OutPut("Hello Next.js SpringBoot App")
     }
 }
